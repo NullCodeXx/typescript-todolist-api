@@ -1,23 +1,23 @@
 {
-  "name": "typescript-todolist-api",
-  "version": "0.0.1",
-  "description": "Faire une API avec express et typescript pour gérer une todo list",
-  "main": "todo.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/djaafarcode/typescript-todolist-api.git"
-  },
-  "author": "D. BOUMAZA",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/djaafarcode/typescript-todolist-api/issues"
-  },
-  "homepage": "https://github.com/djaafarcode/typescript-todolist-api#readme",
-  "dependencies": {
-    "express": "^4.15.4",
-    "typescript": "^2.5.2"
-  }
+    "name": "typescript-todolist-api",
+    "version": "0.0.1",
+    "description": "Faire une API avec express et typescript pour gérer une todo list",
+    "main": "todo.js",
+    "scripts": {
+        "test": "node dist/test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/djaafarcode/typescript-todolist-api.git"
+    },
+    "author": "D. BOUMAZA",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/djaafarcode/typescript-todolist-api/issues"
+    },
+    "homepage": "https://github.com/djaafarcode/typescript-todolist-api#readme",
+    "dependencies": {
+        "express": "^4.15.4",
+        "typescript": "^2.5.2"
+    }
 }
