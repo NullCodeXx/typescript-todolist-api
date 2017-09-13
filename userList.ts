@@ -1,17 +1,18 @@
+import {User} from './user';
 
 // Tab User + method add, delete, authentification.
-export class userList{
-    user: Users[] = [];
+export class UserList{
+    user: User[] = [];
 
     //On ajoute un utilisateur.
-    add(userName : Users) {
+    add(userName : User) {
         this.user.push(userName);
     }
 
     //On cherche(boucle,condition si = et supprime si ok ou null)
     del(userName : string) {
         for(let i = 0 ; i < this.user.length ; i++) {
-            if(this.user[i].userName === userName) {
+            if(this.user[i].name === userName) {
                 this.user.slice(i, 1);
             }
         }

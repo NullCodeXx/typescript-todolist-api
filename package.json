@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/djaafarcode/typescript-todolist-api#readme",
     "dependencies": {
+        "body-parser": "^1.18.1",
         "express": "^4.15.4",
         "typescript": "^2.5.2"
     }

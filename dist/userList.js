@@ -1,24 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // Tab User + method add, delete, authentification.
-var userList = /** @class */ (function () {
-    function userList() {
+var UserList = /** @class */ (function () {
+    function UserList() {
         this.user = [];
     }
     //On ajoute un utilisateur.
-    userList.prototype.add = function (userName) {
+    UserList.prototype.add = function (userName) {
         this.user.push(userName);
     };
     //On cherche(boucle,condition si = et supprime si ok ou null)
-    userList.prototype.del = function (userName) {
+    UserList.prototype.del = function (userName) {
         for (var i = 0; i < this.user.length; i++) {
-            if (this.user[i].userName === userName) {
+            if (this.user[i].name === userName) {
                 this.user.slice(i, 1);
             }
         }
     };
     //Boucle des argums de id et du pwd 
-    userList.prototype.auth = function (id, password) {
+    UserList.prototype.auth = function (id, password) {
         for (var u = 0; u < this.user.length; u++) {
             if (id[u] === id && password[u] === password) {
                 return u;
@@ -27,7 +27,7 @@ var userList = /** @class */ (function () {
         //Sinon retourne moi null.
         return null;
     };
-    return userList;
+    return UserList;
 }());
-exports.userList = userList;
+exports.UserList = UserList;
 //# sourceMappingURL=userList.js.map
