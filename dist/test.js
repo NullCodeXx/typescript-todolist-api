@@ -7,14 +7,14 @@ var list = new userList_1.UserList();
 list.add(new user_1.User("Prénom1", "mdp1"));
 list.add(new user_1.User("Prénom2", "mdp2"));
 if (list.user.length != 2) {
-    console.log("");
+    console.error("Error, liste du tableau d'utilisateur : " + list.user.length);
     process.exit(1);
 }
 //Function delete.
 list.del("Prénom2");
 console.log(list);
 if (list.user.length != 1) {
-    console.error("Attend une utilisateur, liste du tableau d'utilisateur : " + list.user.length);
+    console.error("Error, liste du tableau d'utilisateur : " + list.user.length);
     process.exit(1);
 }
 //function Authentification.

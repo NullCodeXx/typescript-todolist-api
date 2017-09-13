@@ -19,9 +19,9 @@ var UserList = /** @class */ (function () {
     };
     //Boucle des argums de id et du pwd 
     UserList.prototype.auth = function (id, password) {
-        for (var u = 0; u < this.user.length; u++) {
-            if (id[u] === id && password[u] === password) {
-                return u;
+        for (var nombre = 0; nombre < this.user.length; nombre++) {
+            if (id[nombre] === id && password[nombre] === password) {
+                return nombre; //return number & i want return string.
             }
         }
         //Sinon retourne moi null.
