@@ -19,7 +19,7 @@ if (list.user.length != 1) {
 }
 //function Authentification.
 var us = list.auth("Prénom1", "mdp1");
-if (us.name != "Prénom1" || us.password != "mdp1") {
+if (us.name != "Prénom1" || us.getpassword() != "mdp1") {
     console.error("expect user titi got ", us);
     process.exit(1);
 }

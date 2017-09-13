@@ -6,8 +6,8 @@ var User = /** @class */ (function () {
         this.name = name;
         this.password = password;
     }
-    User.prototype.display = function () {
-        return this.name + this.password;
+    User.prototype.getpassword = function () {
+        return this.password;
     };
     return User;
 }());

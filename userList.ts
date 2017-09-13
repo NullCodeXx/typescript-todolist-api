@@ -19,9 +19,9 @@ export class UserList{
     }
 
     //Boucle des argums de id et du pwd 
-    auth(id : string, password : string):User {
-        for(let nombre = 0; nombre < this.user.length ; nombre ++) {
-            if(id[nombre] === id && password[nombre] === password) {
+    auth(name, password : string) {
+        for(let nombre of this.user) {
+            if(nombre.name == name && nombre.getpassword() == password) {
                 return nombre; //return number & i want return string.
             }
         }
